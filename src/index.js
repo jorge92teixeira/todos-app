@@ -7,6 +7,6 @@ import configuStore from './configureStore';
 const store = configuStore();
 
 render(
-  <Root store={store}/>,
+  <Root store={store} />,
   document.getElementById('root'),
 );
