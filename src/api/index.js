@@ -23,7 +23,7 @@ const delay = (ms) => (
   new Promise((resolve) => setTimeout(resolve, ms))
 );
 
-const fetchTodos = (filter) => (
+export const fetchTodos = (filter) => (
   delay(500).then(() => {
     switch (filter) {
       case 'all':
@@ -37,5 +37,3 @@ const fetchTodos = (filter) => (
     }
   })
 );
-
-export default fetchTodos;
